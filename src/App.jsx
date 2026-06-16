@@ -42,15 +42,15 @@ function App() {
       </div>
     );
   }
-
   return (
     <BrowserRouter>
-      <Routes>
-        {}
-        <Route
-          path="/"
-          element={
-            <WeatherBackground id={weatherData?.current?.weather[0]?.id}>
+      {}
+      <WeatherBackground id={weatherData?.current?.weather[0]?.id}>
+        <Routes>
+          {}
+          <Route
+            path="/"
+            element={
               <WeatherDashboard
                 weatherData={weatherData}
                 error={error}
@@ -58,16 +58,16 @@ function App() {
                 setActiveTab={setActiveTab}
                 handleSearch={handleSearch}
               />
-            </WeatherBackground>
-          }
-        />
+            }
+          />
 
-        {}
-        <Route
-          path="/map"
-          element={<MapPage current={weatherData?.current} />}
-        />
-      </Routes>
+          {}
+          <Route
+            path="/map"
+            element={<MapPage current={weatherData?.current} />}
+          />
+        </Routes>
+      </WeatherBackground>
     </BrowserRouter>
   );
 }

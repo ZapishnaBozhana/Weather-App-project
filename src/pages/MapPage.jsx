@@ -34,10 +34,10 @@ function MapPage({ current }) {
   const [weatherLayer, setWeatherLayer] = useState("precipitation_new");
 
   return (
-    <div className="h-screen w-full bg-slate-950 p-4 md:p-6 text-white flex flex-col animate-fadeIn font-sans overflow-hidden">
+    <div className="h-screen w-full bg-black/20 flex flex-col animate-fadeIn font-sans overflow-hidden">
       {}
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center bg-white/10 backdrop-blur-md border border-white/10 p-4 mb-4 shadow-lg gap-4 shrink-0">
-        <div className="flex items-center gap-4 flex-wrap sm:flex-nowrap">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center bg-white/10 backdrop-blur-md border border-white/10 p-4 mb-4 shadow-lg gap-4 shrink-0 my-4">
+        <div className="flex items-center gap-4 flex-wrap sm:flex-nowrap px-4 py-2 ">
           <div className="text-xl font-bold tracking-widest flex items-center gap-1 drop-shadow-md select-none">
             <span className="text-xs uppercase tracking-widest text-slate-300 font-semibold ml-2">
               Radar
@@ -75,7 +75,7 @@ function MapPage({ current }) {
       </div>
 
       {}
-      <div className="flex-1 overflow-hidden border border-white/10 shadow-2xl relative w-full mb-2">
+      <div className="flex-1 overflow-hidden border-t border-white/10 bg-black/10 backdrop-blur-md shadow-[0_12px_40px_0_rgba(0,0,0,0.3)] relative w-full p-4 md:p-6">
         <MapContainer
           center={position}
           zoom={5}
@@ -87,6 +87,7 @@ function MapPage({ current }) {
           <TileLayer
             url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
             attribution="&copy; OpenStreetMap &copy; CARTO"
+            opacity={0.85}
           />
 
           {weatherLayer !== "none" && (
