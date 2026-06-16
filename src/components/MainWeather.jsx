@@ -6,7 +6,7 @@ function MainWeather({ current }) {
   const formatDate = (timezone) => {
     const localTime = new Date(
       new Date().getTime() + timezone * 1000 - 3 * 3600 * 1000,
-    ); 
+    );
     return localTime.toLocaleDateString("en-US", {
       weekday: "long",
       day: "numeric",
@@ -15,7 +15,6 @@ function MainWeather({ current }) {
     });
   };
 
-  
   const temp = Math.round(current.main.temp);
 
   const iconCode = current.weather[0].icon;
@@ -24,7 +23,7 @@ function MainWeather({ current }) {
   return (
     <div className="flex flex-col justify-between p-6 md:p-12 flex-1 min-h-[40vh] md:min-h-screen">
       <div className="text-2xl font-bold tracking-wider flex items-center gap-1">
-        <span className="text-yellow-400">⚡</span>
+        <span className="text-yellow-400"></span>
       </div>
 
       <div className="mt-auto">

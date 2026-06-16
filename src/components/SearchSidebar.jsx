@@ -47,7 +47,7 @@ function SearchSidebar({
           </button>
         </form>
 
-        {/* 🎛️ Меню перемикання сторінок (Кнопки навігації) */}
+        {}
         <div className="flex justify-between border-b border-white/10 mt-6 text-xs uppercase tracking-wider">
           <button
             onClick={() => setActiveTab("today")}
@@ -69,7 +69,7 @@ function SearchSidebar({
           </button>
         </div>
 
-        {/* 📊 ДИНАМІЧНИЙ КОНТЕНТ ВЕРХНЬОЇ ПАНЕЛІ */}
+        {}
         {activeTab === "today" && (
           <div className="mt-6 animate-fadeIn">
             <h3 className="text-xs uppercase tracking-widest text-slate-300 font-semibold mb-4">
@@ -176,7 +176,7 @@ function SearchSidebar({
         )}
       </div>
 
-      {/* ⏳ НИЖНЯ ПАНЕЛЬ: ЗАВЖДИ ПОКАЗУЄ ПОГОДИННИЙ ПРОГНОЗ ДЛЯ ЗРУЧНОСТІ */}
+      {}
       <div className="mt-8 border-t border-white/10 pt-4">
         <h3 className="text-xs uppercase tracking-widest text-slate-300 font-medium mb-3">
           Hourly Timeline
