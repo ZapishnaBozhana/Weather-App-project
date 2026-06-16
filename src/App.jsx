@@ -9,6 +9,7 @@ function App() {
   const [weatherData, setWeatherData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [activeTab, setActiveTab] = useState("today");
 
   const getWeatherData = async (searchCity) => {
     setLoading(true);
@@ -36,7 +37,7 @@ function App() {
     return (
       <div className="min-h-screen bg-slate-900 flex items-center justify-center text-white text-xl">
         <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-white mr-3"></div>
-        Завантаження погоди...
+        Loading...
       </div>
     );
   }
@@ -53,6 +54,8 @@ function App() {
         current={weatherData?.current}
         forecast={weatherData?.forecast}
         onSearch={handleSearch}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
       />
     </WeatherBackground>
   );
