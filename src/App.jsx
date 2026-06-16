@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import WeatherDashboard from "./pages/WeatherDashboard";
 import MapPage from "./pages/MapPage";
 import WeatherBackground from "./components/WeatherBackground";
 import { fetchWeatherData } from "./services/WeatherService";
+
+const MapPage = lazy(() => import("./pages/MapPage"));
 
 function App() {
   const [city, setCity] = useState("Kyiv");
