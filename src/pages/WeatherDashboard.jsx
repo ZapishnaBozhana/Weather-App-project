@@ -20,7 +20,7 @@ function WeatherDashboard({
         </div>
       )}
 
-      {/* 🎛️ Наш контейнер тепер знову має класи флексів, щоб кнопка і віджет стояли в один ряд */}
+      {}
       <div className="absolute top-6 left-6 md:left-12 z-40 flex flex-col sm:flex-row gap-3 items-start sm:items-center">
         <Link
           to="/map"
