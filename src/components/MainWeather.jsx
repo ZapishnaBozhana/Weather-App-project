@@ -23,6 +23,7 @@ function MainWeather({ current }) {
   return (
     <div className="flex flex-col justify-between p-6 md:p-12 flex-1 min-h-[40vh] md:min-h-screen">
       <div className="text-2xl font-bold tracking-wider flex items-center gap-1">
+        <span></span>
         <span className="text-yellow-400"></span>
       </div>
 

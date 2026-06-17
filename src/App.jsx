@@ -1,7 +1,6 @@
 import React, { useState, useEffect, lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import WeatherDashboard from "./pages/WeatherDashboard";
-import MapPage from "./pages/MapPage";
 import WeatherBackground from "./components/WeatherBackground";
 import { fetchWeatherData } from "./services/WeatherService";
 
