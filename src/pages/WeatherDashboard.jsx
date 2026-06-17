@@ -23,7 +23,7 @@ function WeatherDashboard({
       <div className="absolute top-6 left-6 md:left-12 z-40">
         <Link
           to="/map"
-          className="group flex items-center gap-3 bg-white/5 hover:bg-white/10 active:bg-white/15 border border-white/10 backdrop-blur-md px-5 py-3 rounded-xl text-xs uppercase tracking-widest font-medium text-slate-200 hover:text-white transition-all duration-300 shadow-[0_8px_32px_0_rgba(0,0,0,0.2)] hover:shadow-[0_8px_32px_0_rgba(250,204,21,0.1)] hover:-translate-y-0.5"
+          className="group flex items-center gap-3 bg-white/5 hover:bg-white/10 active:bg-white/15 border border-white/10 backdrop-blur-md px-5 py-3 xl:px-6 xl:py-4 rounded-2xl text-xs xl:text-sm uppercase tracking-widest font-medium text-slate-200 hover:text-white transition-all duration-300 shadow-[0_8px_32px_0_rgba(0,0,0,0.2)] hover:shadow-[0_8px_32px_0_rgba(250,204,21,0.1)] hover:-translate-y-0.5"
         >
           {}
           <svg

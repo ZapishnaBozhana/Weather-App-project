@@ -21,7 +21,7 @@ function MainWeather({ current }) {
   const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
   return (
-    <div className="flex flex-col justify-between p-6 md:p-12 flex-1 min-h-[40vh] md:min-h-screen">
+    <div className="flex flex-col justify-between p-6 md:p-12 xl:p-20 2xl:p-28 flex-1 min-h-[40vh] md:min-h-screen">
       <div className="text-2xl font-bold tracking-wider flex items-center gap-1">
         <span></span>
         <span className="text-yellow-400"></span>
@@ -29,12 +29,14 @@ function MainWeather({ current }) {
 
       <div className="mt-auto">
         <div className="flex items-center gap-4 flex-wrap">
-          <span className="text-7xl md:text-9xl font-light tracking-tighter">
+          <span className="text-7xl md:text-9xl xl:text-[10rem] 2xl:text-[12rem] font-extralight tracking-tighter leading-none">
             {temp}°
           </span>
 
           <div className="flex flex-col">
-            <h1 className="text-3xl md:text-5xl font-medium">{current.name}</h1>
+            <h1 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-normal tracking-tight">
+              {current.name}
+            </h1>
             <p className="text-sm text-slate-300 mt-1">
               {formatDate(current.timezone)}
             </p>

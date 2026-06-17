@@ -25,7 +25,7 @@ function SearchSidebar({
     : [];
 
   return (
-    <div className="w-full md:w-[460px] bg-black/20 backdrop-blur-xl border-t md:border-t-0 md:border-l border-white/10 p-6 md:p-8 flex flex-col justify-between min-h-screen shadow-2xl transition-all duration-300">
+    <div className="w-full md:w-[450px] xl:w-[520px] 2xl:w-[580px] bg-black/20 backdrop-blur-xl border-t md:border-t-0 md:border-l border-white/20 p-6 md:p-8 xl:p-12 flex flex-col justify-between min-h-screen shadow-2xl">
       <div>
         {}
         <form
@@ -78,7 +78,7 @@ function SearchSidebar({
             <p className="text-sm uppercase text-yellow-300 mb-4 font-medium tracking-wide">
               {current.weather[0].description}
             </p>
-            <div className="space-y-3 text-sm font-light">
+            <div className="space-y-4 text-sm xl:text-base 2xl:text-lg xl:space-y-6">
               <div className="flex justify-between border-b border-white/5 pb-1">
                 <span className="text-slate-300">Temp max</span>
                 <span>{Math.round(current.main.temp_max)}° 🌡️</span>
