@@ -58,6 +58,7 @@ function App() {
                 activeTab={activeTab}
                 setActiveTab={setActiveTab}
                 handleSearch={handleSearch}
+                pollution={weatherData?.pollution}
               />
             }
           />
